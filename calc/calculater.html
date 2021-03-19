@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content = "width = device-width, instial-sale = 1.0">
+   <meta http-equiv= "X-UA-Compatible" content = "ie=edge">
+   <title> 電卓</title>
+   <link rel = "stylesheet" href="design.css">
+
+</head>
+<body>
+    <script src = "System.js"></script>
+        <img src ="../picture/yohaku.png">
+        <form name="form1" action="" method="">
+            <table align="center" border="4" bordercolor="#000000" cellspacing="0" cellpadding="10%">
+                <tr>
+                    <td colspan="4"><input type="text" name="disp" class="disp" value="0"></td>
+                </tr>
+                <tr>
+                    <td width="25%"><input type="button" value="7" onClick="push(this.value); adplay(8)"></td>
+                    <td width="25%"><input type="button" value="8" onClick="push(this.value); adplay(9)"></td>
+                    <td width="25%"><input type="button" value="9" onClick="push(this.value); adplay(10)"></td>
+                    <td width="25%"><input type="button" value="÷" onClick="push(this.value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onClick="push(this.value); adplay(5)"></td>
+                    <td><input type="button" value="5" onClick="push(this.value); adplay(6)"></td>
+                    <td><input type="button" value="6" onClick="push(this.value); adplay(7)"></td>
+                    <td><input type="button" value="×" onClick="push(this.value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="1" onClick="push(this.value); adplay(2)"></td>
+                    <td><input type="button" value="2" onClick="push(this.value); adplay(3)"></td>
+                    <td><input type="button" value="3" onClick="push(this.value); adplay(4)"></td>
+                    <td><input type="button" value="－" onClick="push(this.value)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onClick="push(this.value); adplay(1)"></td>
+                    <td><input type="button" value="Ｃ" onClick="push(this.value); adplay(11)"></td>
+                    <td><input type="button" value="＝" onClick="push(this.value)"></td>
+                    <td><input type="button" value="＋" onClick="push(this.value)"></td>
+            </table>
+    </div>
+</body>
+</html>
