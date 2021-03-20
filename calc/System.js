@@ -14,12 +14,12 @@ function push(val) {
             disp    = disp + val;
             disp    = parseFloat(disp);
         }
-        ongaku.push(val);
+        ongaku.push(val);           //422の順にボタン押すとどんぐりころころ流れる
         if (ongaku.length == 3) {
             if (ongaku[0] == 4) {
                 if (ongaku[1] == 2) {
                     if (ongaku[2] == 2) {  
-                        setTimeout('adplay(100)', 1000);
+                        setTimeout('adplay(100)', 1000); //1000ms(一秒後に)
                     }
                 }
             }
@@ -98,7 +98,7 @@ function adplay(a){ //音楽を流す
     }
 
     audio.play();
-    setTimeout(function adstop() {
+    setTimeout(function adstop() {      //5秒後に停止
         audio.pause();
         audio.currentTime = 0;
     }, 5000);
